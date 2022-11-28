@@ -18,7 +18,7 @@ If you use [Homebrew](https://brew.sh), you can install it by running
 brew install danirukun/ytarchive/ytarchive
 ```
 
-Alternatively, if you have Go properly installed and set up, run `go install github.com/Kethsar/ytarchive@master`
+Alternatively, if you have Go properly installed and set up, run `go install github.com/AmethystOscuras/ytarchive@handle-support-installable`
 
 `@master` is required because of some bullshit caching Go package proxies do. Should have used Rust...
 
