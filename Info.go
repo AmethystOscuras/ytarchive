@@ -442,7 +442,7 @@ func (di *DownloadInfo) ParseInputUrl() error {
 
 			di.VideoID = parsedQuery.Get("v")
 			return nil
-		} else if strings.HasPrefix(lowerPath, "/channel/") || strings.HasPrefix(lowerPath, "/c/") {
+		} else if strings.HasPrefix(lowerPath, "/channel/") || strings.HasPrefix(lowerPath, "/c/") || strings.HasPrefix(lowerPath, "/@") {
 			// The URL can be polled and the stream can change depending on what
 			// the channel schedules. Useful for set-and-forget
 			chanSlashIdx := strings.Index(lowerPath[1:], "/") + 1

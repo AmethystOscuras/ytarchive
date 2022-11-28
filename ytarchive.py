@@ -1531,7 +1531,7 @@ def parse_input_url(info):
 
         # Attempt to find the actual video ID of the current or closest scheduled
         # livestream for a channel
-        elif lpath.startswith("/channel") and lpath.endswith("live"):
+        elif (lpath.startswith("/channel") or lpath.startswith("/@")) and lpath.endswith("live"):
             # This is fucking awful but it works
             html = download_as_text(info.url)
             if len(html) == 0:
